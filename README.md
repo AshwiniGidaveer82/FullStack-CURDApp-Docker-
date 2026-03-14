@@ -360,5 +360,4 @@ docker compose up
 ---
 
 # 👨‍💻 Author
-
-Fullstack Angular + Docker Project
+Ashwini Gidaveer

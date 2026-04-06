@@ -1,7 +1,22 @@
+# 📦 Fullstack CRUD Application with AI Microservice Generator
+
+## 🚀 Cursor Slash Commands
+
+Use these in Cursor Composer/Chat:
+
+- `/new-api-microservice Resource plural "fields" [mode]`
+  - Ex: `/new-api-microservice User users "name:String required, email:String required" integrated`
+  - Generates: model, controller, routes, app mount, Angular service.
+  - `microservice`: Full standalone backend-{plural}, Docker, K8s.
+  
+See `docs/MOP-API-MICROSERVICE.md` for details.
+
 # 📦 Fullstack CRUD Application  
+
 Angular + Node.js + MongoDB + Docker Compose
 
 ---
+
 # 📌 Project Overview
 
 This project is a complete end-to-end fullstack CRUD application built using:
@@ -182,21 +197,25 @@ Docker automatically resolves service names using internal DNS.
 # 📄 API Endpoints
 
 ## Create Book
+
 ```
 POST /books
 ```
 
 ## Get Books with Pagination
+
 ```
 GET /books?page=1&limit=10
 ```
 
 ## Update Book
+
 ```
 PUT /books/:id
 ```
 
 ## Delete Book
+
 ```
 DELETE /books/:id
 ```
@@ -306,9 +325,11 @@ Production mode:
 # 🧱 Multi-Stage Docker Build (Frontend)
 
 Stage 1:
+
 - Build Angular app using Node
 
 Stage 2:
+
 - Serve static files using Nginx
 
 Benefits:
@@ -360,4 +381,5 @@ docker compose up
 ---
 
 # 👨‍💻 Author
+
 Ashwini Gidaveer
